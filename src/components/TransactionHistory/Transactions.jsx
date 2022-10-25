@@ -1,4 +1,5 @@
 import { TableRow, TableTD } from './TransactionHistory.Styled';
+import PropTypes from 'prop-types';
 
 export const Transactions = ({ transactions }) => {
   return (
@@ -15,4 +16,8 @@ export const Transactions = ({ transactions }) => {
       })}
     </tbody>
   );
+};
+
+Transactions.propTypes = {
+  transactions: PropTypes.array.isRequired,
 };
