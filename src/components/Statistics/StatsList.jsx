@@ -1,4 +1,5 @@
 import { StatItem, StatsList } from './Statistics.styled';
+import PropTypes from 'prop-types';
 
 export const Stats = ({ data }) => {
   return (
@@ -14,4 +15,8 @@ export const Stats = ({ data }) => {
       })}
     </StatsList>
   );
+};
+
+Stats.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

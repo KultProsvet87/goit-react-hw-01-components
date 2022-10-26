@@ -19,5 +19,5 @@ export const Transactions = ({ transactions }) => {
 };
 
 Transactions.propTypes = {
-  transactions: PropTypes.array.isRequired,
+  transactions: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
